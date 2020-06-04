@@ -1,0 +1,16 @@
+package JavaOopsConcept;
+
+public class LocalVsGlobal {
+	String name="tom";
+	int age=25;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i=23;
+		System.out.println(i);
+	}
+
+	public void sum() {
+		int i=10,j=20;
+		int age=32; 
+	}
+}

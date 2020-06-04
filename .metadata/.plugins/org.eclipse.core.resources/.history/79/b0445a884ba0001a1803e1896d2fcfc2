@@ -1,0 +1,14 @@
+package ListConcepts;
+
+import java.util.Hashtable;
+
+public class HashTableConcept {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Hashtable<int, String> ht=new Hashtable<int, String>(); //k is key v is value
+		
+		
+	}
+
+}

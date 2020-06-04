@@ -1,0 +1,45 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.InputSource;
+
+
+public class FirstTestCase {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\WebDrivers\\chromedriver.exe");
+		WebDriver CD=new ChromeDriver();
+		CD.get("https://www.makemytrip.com/");
+		System.out.print(CD.getTitle());
+//		CD.getWindowHandle()
+//		CD.navigate();
+		WebElement flightButton=CD.findElement(By.xpath("//a [@href='//www.makemytrip.com/flights/']"));
+		try {
+			flightButton.getScreenshotAs(OutputType<java.io.File> "C:\\Scrrenshot.jpeg");
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		 	
+		
+//		getRect();
+		flightButton.sendKeys(Keys.ENTER);
+//		sendKeys("{enter}");
+		
+		WebElement hotels=CD.findElement(By.xpath("//a [@href='//www.makemytrip.com/hotels/']"));
+		hotels.getRect();
+		hotels.sendKeys(Keys.ENTER);
+//		
+//		WebElement searchButton=CD.findElement(By.xpath("//input [@type='submit' and @value='Google Search']"));
+//		searchButton.getRect();
+//		searchButton.submit();
+//		click();
+//		("https://www.java.com/en/download/windows-64bit.jsp");
+//		CD.getTitle();
+	}
+
+}

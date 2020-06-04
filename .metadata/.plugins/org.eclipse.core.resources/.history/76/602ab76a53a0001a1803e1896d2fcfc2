@@ -1,0 +1,15 @@
+package FinalFinallyFinalize;
+
+public class FinalConcept {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//Final is used to defined constant values i.e  once declared final, value cannot be changed
+		
+		final int i=10;
+		//i=20; //Uncomment to see error
+		
+		System.out.println(i);
+	}
+
+}

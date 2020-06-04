@@ -1,0 +1,17 @@
+package JavaBasics;
+
+public class ConstructorConcept1 {
+	public ConstructorConcept() {
+		
+	}
+	
+	
+	public ConstructorConcept() {
+		System.out.println("Inside parameterized constructor");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ConstructorConcept con=new ConstructorConcept();
+	}
+
+}

@@ -1,0 +1,17 @@
+package JavaBasics;
+
+public class A {
+	
+	public A() {
+		System.out.println("Inside Parent class Constructor");
+	}
+	public A(int i)
+	{
+		System.out.println("Inside parameterized constructor of Class A. Valuye of i is " + i);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		}
+	
+
+}

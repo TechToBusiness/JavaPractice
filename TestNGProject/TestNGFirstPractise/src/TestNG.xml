@@ -1,0 +1,17 @@
+<suite name="FirstRegression" >
+  <!-- <test name="Test1" >
+    <classes>
+      <class name="com.test.GoogleTestNG"  />
+      <class name="com.test.TestNGFirst"  />
+    </classes>
+    </test>-->
+   
+   <test name="ParameterTest" >
+   
+   <parameter name="url" value="https://login.yahoo.com"/>
+   <parameter name="loginId" value="chomu@yahoo.com"/>
+    <classes>
+      <class name="com.parameters.ParameterTest"  />
+    </classes>
+    </test>
+</suite>

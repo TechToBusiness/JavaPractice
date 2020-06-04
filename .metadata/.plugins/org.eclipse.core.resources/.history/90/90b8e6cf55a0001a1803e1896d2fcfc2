@@ -1,0 +1,23 @@
+package FinalFinallyFinalize;
+
+public class FinallyConcept {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void testMethod() {
+	try{
+		System.out.println("inside Finally Method");
+		throw new RuntimeException("test");
+		
+	}
+	catch(Exception e)
+	{
+		System.out.println("inside catch");
+	}
+	finally {
+		System.out.println("inside finally block");
+	}
+}

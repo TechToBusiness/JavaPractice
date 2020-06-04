@@ -1,0 +1,21 @@
+package ListConcepts;
+
+import java.util.LinkedList;
+
+public class LinkedListConcept {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<String> llc=new LinkedList<String>();
+		
+		//Operation 1 - ADD
+		llc.add("test");
+		llc.add("QTP");
+		llc.add("Selenium");
+		llc.add("RFT");
+		
+		System.out.println("Contents of LinkedList: " + llc);
+		
+	}
+
+}

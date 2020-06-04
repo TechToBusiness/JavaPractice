@@ -1,0 +1,16 @@
+package JavaBasics;
+
+public class ConstructorWithThisKeyword {
+	int age;
+	String name;
+	
+	public ConstructorWithThisKeyword(String name, int age)
+	{
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

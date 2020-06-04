@@ -1,0 +1,18 @@
+package JavaOopsConcept;
+
+public class CallByValueAndReference {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CallByValueAndReference obj=new CallByValueAndReference();
+		int a =10, b=20;
+		
+		System.out.println(obj.Test(a, b));
+	}
+	public int Test(int a, int b)
+	{
+		int c;
+		c=a+b;
+		return c;
+	}
+}

@@ -1,0 +1,4 @@
+#Tue May 26 00:26:41 IST 2020
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=testng

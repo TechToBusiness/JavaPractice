@@ -1,0 +1,27 @@
+package JavaBasics;
+
+public class ConstructorConcept {
+	
+	//Default Constructors
+	public ConstructorConcept() {
+		System.out.println("Default Constructor");
+	}
+	
+	//Parameterized Constructor
+	public ConstructorConcept(int i) {
+		System.out.println("Value of i" + i);
+		
+	}
+	
+	//Parameterized Constructor with 2 parameters
+	public ConstructorConcept(int i,int j) {
+		
+		System.out.println("Value of I and j" + i + "   " + j);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	ConstructorConcept cc=new ConstructorConcept();
+	
+	}
+
+}

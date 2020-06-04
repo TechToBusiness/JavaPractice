@@ -1,0 +1,70 @@
+import org.apache.commons.exec.launcher.Java13CommandLauncher;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Sleeper;
+
+import java.io.File;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
+import java.sql.Time;
+
+
+public class FirstTestCase {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\WebDrivers\\chromedriver.exe");
+		WebDriver CD=new ChromeDriver();
+		CD.get("https://www.makemytrip.com/");
+		System.out.print(CD.getTitle());
+//		CD.getWindowHandle()
+//		CD.navigate();
+//		WebElement flightButton=CD.findElement(By.xpath("//a [@href='//www.makemytrip.com/flights/']"));
+		WebElement flightButton=CD.findElement(By.xpath("//a //span [text()='Flights'][1]"));
+		
+		try {
+			File ff=flightButton.getScreenshotAs(OutputType.FILE);
+			System.out.print(ff.getAbsolutePath());
+			FileSystem FS=FileSystems.getDefault();
+			ff.renameTo(new File("C:\\Collection\\TestScreen.jpeg"));
+				
+			
+		
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		 	
+		
+//		getRect();
+		flightButton.click();
+//		flightButton.sendKeys(Keys.ENTER);
+//		time
+//		sendKeys("{enter}");
+		
+//		WebElement hotels=CD.findElement(By.xpath("//a [@href='//www.makemytrip.com/hotels/']"));
+		WebElement hotels=CD.findElement(By.xpath("//span [text()='Hotels']"));
+		
+//		hotels.getRect();
+		hotels.click();
+//		hotels.sendKeys/(Keys.ENTER);
+//		
+//		WebElement searchButton=CD.findElement(By.xpath("//input [@type='submit' and @value='Google Search']"));
+//		searchButton.getRect();
+//		searchButton.submit();
+//		click();
+//		("https://www.java.com/en/download/windows-64bit.jsp");
+//		CD.getTitle();
+		
+		WebElement cityName=CD.findElement(By.xpath("//input [@id='city']"));
+		cityName.click();
+		Thread.sleep("1000");
+	cityName.sendKeys("Karnal");
+	WebElement cityNameSelect =CD.findElement(By.xpath("//span [@class='sr_city blackText' and text()='Karnal, India']"));
+	cityNameSelect.click();	}
+
+}

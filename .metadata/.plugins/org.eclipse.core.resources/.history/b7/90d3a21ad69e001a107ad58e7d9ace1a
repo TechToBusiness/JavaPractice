@@ -1,0 +1,74 @@
+package ListConcepts;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ArrayListsTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer> al1=new ArrayList<Integer>();
+		
+		//ArrayList<E> E data type of list. So if array list is added for type Integer, no other data types can be added
+		//For making it dynamic, we need not to specify E
+		
+		al1.add(100);
+		
+		System.out.println(al1.size());
+		
+		al1.add(200);
+		
+		System.out.println(al1.size());
+		
+		al1.add(400);
+		
+		al1.add(300);
+		
+		al1.trimToSize();
+		System.out.println(al1.size());
+		
+		
+		ArrayList al2=new ArrayList();
+		al2.add("Test");
+		al2.add(1);
+		System.out.println(al2.size());
+		
+		
+		//Employee Part Arraylist
+		
+		Employee e1=new Employee("Tarun", 32, "QA");
+		Employee e2=new Employee("Cheng", 34, "Dev");
+		Employee e3=new Employee("Michelle", 45, "BA");
+		
+		ArrayList<Employee> eal1=new ArrayList<Employee>();
+		
+		eal1.add(new Employee("Tarun", 32, "QA"));
+		eal1.add(e1);
+		eal1.add(e2);
+		eal1.add(e3);
+	
+//Traversing:
+		
+		Iterator<Employee> it1= eal1.iterator(); //Iterator is a parent class of Arraylist. So implementing dynamic polymorphism where object of parent class taking referenc to child class;
+		while(it1.hasNext())
+		{
+			Employee emp=it1.next();
+			System.out.println(emp.name);
+			System.out.println(emp.age);
+			System.out.println(emp.dept);
+			
+		}
+		
+		//ARRAYLIS ADDALL method
+		ArrayList<Employee> eal2=new ArrayList<Employee>();
+		
+		eal2.addAll(eal1);
+		
+		for(int i=0; i< eal2.size();i++)
+		{
+			System.out.println(eal2.get(i).name);
+		}
+		
+	}
+
+}

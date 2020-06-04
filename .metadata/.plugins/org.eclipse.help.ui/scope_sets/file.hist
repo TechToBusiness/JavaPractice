@@ -1,0 +1,4 @@
+#Wed Jun 05 01:35:29 IST 2019
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=file

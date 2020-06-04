@@ -1,0 +1,17 @@
+package JavaBasics;
+
+public class ConstructorWithThisKeyword {
+	int age;
+	String name;
+	
+	public ConstructorWithThisKeyword(String name, int age)
+	{
+		this.name=name;
+		this.age=age;
+	}	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ConstructorWithThisKeyword cwt=new ConstructorWithThisKeyword("Tarun", 34);
+	}
+
+}

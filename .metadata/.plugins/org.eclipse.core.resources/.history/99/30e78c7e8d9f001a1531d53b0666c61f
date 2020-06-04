@@ -1,0 +1,13 @@
+package ListConcepts;
+
+import java.util.LinkedList;
+
+public class LinkedListConcept {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<String> llc=new LinkedList<String>();
+		
+	}
+
+}

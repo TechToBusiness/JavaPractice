@@ -1,0 +1,10 @@
+package FinalFinallyFinalize;
+
+public class ParentClass {
+	
+	public void sum()
+	{
+		System.out.println("Print the sum");
+	}
+
+}
