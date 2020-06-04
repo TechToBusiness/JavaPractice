@@ -3869,3 +3869,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.po
 2020-06-05 00:57:35,060 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Selenium\Learning\TestNGProject\TestNGFirstPractise\src\main\resources
 2020-06-05 00:57:35,061 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-06-05 00:57:35,062 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Selenium\Learning\TestNGProject\TestNGFirstPractise\src\test\resources
+2020-06-05 01:12:00,141 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
